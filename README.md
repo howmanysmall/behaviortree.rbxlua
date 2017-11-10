@@ -213,14 +213,6 @@ local decoratedSequence = BehaviourTree.InvertDecorator:new({
 
 If you want to contribute? If you have some ideas or critics, just open an issue, here on github. If you want to get your hands dirty, you can fork this repo. But note: If you write code, don't forget to write tests. And then make a pull request. I'll be happy to see what's coming.
 
-##Specs
-
-This project uses [busted](http://olivinelabs.com/busted/) for its specs. If you want to run the specs, you will have to install it first. Then just execute the following:
-
-```bash
-cd /folder/where/the/spec/folder/is
-busted
-```
 
 ## MIT License
 
