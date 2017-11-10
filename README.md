@@ -5,7 +5,7 @@ A RbxLua implementation of Behavior Trees ported from a [lua implementation](htt
 
 Just copy the BehaviorTree folder into ReplicatedStorage (you are free to change the location, just make sure to update the paths in all of the modules) 
 
-`BehaviorTree = require(game.ReplicatedStorage.Library.BehaviorTree.Behavior_tree)`
+`BehaviorTree = require(game.ReplicatedStorage.BehaviorTree.Behavior_tree)`
 
 ## How to use
 
