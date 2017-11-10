@@ -1,4 +1,4 @@
-local BT = require('lib/behaviour_tree')
+local BT = require(game.ReplicatedStorage.Library.BehaviourTree.behaviour_tree)
 
 local Frank = BT:new({
   object = {name = 'test'},

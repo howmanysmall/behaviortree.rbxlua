@@ -1,6 +1,5 @@
-local _PACKAGE = (...):match("^(.+)[%./][^%./]+"):gsub("[%./]?node_types", "")
-local class = require(_PACKAGE..'/middleclass')
-local BranchNode  = require(_PACKAGE..'/node_types/branch_node')
+local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
+local BranchNode  	= require(game.ReplicatedStorage.Library.BehaviourTree.node_types.branch_node)
 local Random = class('Random', BranchNode)
 
 function Random:start(object)

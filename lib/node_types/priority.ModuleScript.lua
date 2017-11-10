@@ -1,6 +1,6 @@
-local _PACKAGE = (...):match("^(.+)[%./][^%./]+"):gsub("[%./]?node_types", "")
-local class = require(_PACKAGE..'/middleclass')
-local BranchNode  = require(_PACKAGE..'/node_types/branch_node')
+local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.Library.BehaviourTree.registry)
+local BranchNode  	= require(game.ReplicatedStorage.Library.BehaviourTree.node_types.branch_node)
 local Priority = class('Priority', BranchNode)
 
 function Priority:success()

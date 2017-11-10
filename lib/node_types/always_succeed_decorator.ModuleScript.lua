@@ -1,6 +1,5 @@
-local _PACKAGE = (...):match("^(.+)[%./][^%./]+"):gsub("[%./]?node_types", "")
-local class = require(_PACKAGE..'/middleclass')
-local Decorator  = require(_PACKAGE..'/node_types/decorator')
+local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
+local Decorator  	= require(game.ReplicatedStorage.Library.BehaviourTree.node_types.decorator)
 local AlwaysSucceedDecorator = class('AlwaysSucceedDecorator', Decorator)
 
 function AlwaysSucceedDecorator:success()
