@@ -1,6 +1,8 @@
 # BehaviorTree.RbxLua 
 A RbxLua implementation of Behavior Trees ported from a [lua implementation](https://github.com/tanema/Behaviortree.lua) ported from javascript [here](http://github.com/Calamari/BehaviorTree.js). They are useful for implementing AIs. If you need more information about Behavior Trees, look on [GameDevAI](http://aigamedev.com), there is a nice [video about Behavior Trees from Alex Champandard](http://aigamedev.com/open/article/behavior-trees-part1/). There is also a nice read of [Björn Knafla](http://www.altdevblogaday.com/author/bjoern-knafla/) explaining how [explaining how Behavior Trees work](http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/).
 
+[*I highly recommend this from gamesutra*](https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php)
+
 ## Installation
 
 Just copy the BehaviorTree folder into ReplicatedStorage (you are free to change the location, just make sure to update the paths in all of the modules) 
