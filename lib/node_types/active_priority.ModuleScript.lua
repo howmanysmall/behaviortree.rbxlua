@@ -1,6 +1,6 @@
-local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
-local Priority      = require(game.ReplicatedStorage.BehaviourTree.node_types.priority)
+local class         = require(game.ReplicatedStorage.BehaviorTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviorTree.registry)
+local Priority      = require(game.ReplicatedStorage.BehaviorTree.node_types.priority)
 local ActivePriority = class('ActivePriority', Priority)
 
 function ActivePriority:success()

@@ -1,4 +1,4 @@
-local BT = require(game.ReplicatedStorage.BehaviourTree.behaviour_tree)
+local BT = require(game.ReplicatedStorage.BehaviorTree.behavior_tree)
 local count
 
 local looking = BT.Task:new()

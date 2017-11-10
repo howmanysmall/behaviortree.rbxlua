@@ -1,6 +1,6 @@
-local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
-local Node          = require(game.ReplicatedStorage.BehaviourTree.node_types.node)
+local class         = require(game.ReplicatedStorage.BehaviorTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviorTree.registry)
+local Node          = require(game.ReplicatedStorage.BehaviorTree.node_types.node)
 local BranchNode = class('BranchNode', Node)
 
 function BranchNode:start(object)

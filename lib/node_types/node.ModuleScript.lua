@@ -1,5 +1,5 @@
-local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
+local class         = require(game.ReplicatedStorage.BehaviorTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviorTree.registry)
 local Node          = class('Node')
 
 function Node:initialize(config)

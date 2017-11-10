@@ -1,5 +1,5 @@
-local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
-local BranchNode  	= require(game.ReplicatedStorage.BehaviourTree.node_types.branch_node)
+local class         = require(game.ReplicatedStorage.BehaviorTree.middleclass)
+local BranchNode  	= require(game.ReplicatedStorage.BehaviorTree.node_types.branch_node)
 local Random = class('Random', BranchNode)
 
 function Random:start(object)

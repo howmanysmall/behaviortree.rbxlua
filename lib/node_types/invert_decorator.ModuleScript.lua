@@ -1,6 +1,6 @@
-local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
-local Decorator  	= require(game.ReplicatedStorage.BehaviourTree.node_types.decorator)
+local class         = require(game.ReplicatedStorage.BehaviorTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviorTree.registry)
+local Decorator  	= require(game.ReplicatedStorage.BehaviorTree.node_types.decorator)
 local InvertDecorator = class('InvertDecorator', Decorator)
 
 function InvertDecorator:success()
