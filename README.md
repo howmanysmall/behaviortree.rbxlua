@@ -1,4 +1,4 @@
-# BehaviourTree.lua 
+# BehaviourTree.RbxLua 
 A RbxLua implementation of Behavior Trees ported from a [lua implementation](https://github.com/tanema/behaviourtree.lua) ported from javascript [here](http://github.com/Calamari/BehaviorTree.js). They are useful for implementing AIs. If you need more information about Behavior Trees, look on [GameDevAI](http://aigamedev.com), there is a nice [video about Behavior Trees from Alex Champandard](http://aigamedev.com/open/article/behavior-trees-part1/). There is also a nice read of [Björn Knafla](http://www.altdevblogaday.com/author/bjoern-knafla/) explaining how [explaining how Behavior Trees work](http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/).
 
 ## Installation
