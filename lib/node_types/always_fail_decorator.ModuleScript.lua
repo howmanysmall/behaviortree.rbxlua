@@ -1,5 +1,5 @@
-local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
-local Decorator  	= require(game.ReplicatedStorage.Library.BehaviourTree.node_types.decorator)
+local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
+local Decorator  	= require(game.ReplicatedStorage.BehaviourTree.node_types.decorator)
 local AlwaysFailDecorator = class('AlwaysFailDecorator', Decorator)
 
 function AlwaysFailDecorator:success()

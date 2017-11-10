@@ -1,20 +1,20 @@
-local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.Library.BehaviourTree.registry)
-local Node          = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.node)
+local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
+local Node          = require(game.ReplicatedStorage.BehaviourTree.node_types.node)
 local BehaviourTree = class('BehaviourTree', Node)
  
 BehaviourTree.Node                    = Node
 BehaviourTree.Registry                = Registry
 BehaviourTree.Task                    = Node
-BehaviourTree.BranchNode              = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.branch_node)
-BehaviourTree.Priority                = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.priority)
-BehaviourTree.ActivePriority          = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.active_priority)
-BehaviourTree.Random                  = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.random)
-BehaviourTree.Sequence                = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.sequence)
-BehaviourTree.Decorator               = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.decorator)
-BehaviourTree.InvertDecorator         = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.invert_decorator)
-BehaviourTree.AlwaysFailDecorator     = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.always_fail_decorator)
-BehaviourTree.AlwaysSucceedDecorator  = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.always_succeed_decorator)
+BehaviourTree.BranchNode              = require(game.ReplicatedStorage.BehaviourTree.node_types.branch_node)
+BehaviourTree.Priority                = require(game.ReplicatedStorage.BehaviourTree.node_types.priority)
+BehaviourTree.ActivePriority          = require(game.ReplicatedStorage.BehaviourTree.node_types.active_priority)
+BehaviourTree.Random                  = require(game.ReplicatedStorage.BehaviourTree.node_types.random)
+BehaviourTree.Sequence                = require(game.ReplicatedStorage.BehaviourTree.node_types.sequence)
+BehaviourTree.Decorator               = require(game.ReplicatedStorage.BehaviourTree.node_types.decorator)
+BehaviourTree.InvertDecorator         = require(game.ReplicatedStorage.BehaviourTree.node_types.invert_decorator)
+BehaviourTree.AlwaysFailDecorator     = require(game.ReplicatedStorage.BehaviourTree.node_types.always_fail_decorator)
+BehaviourTree.AlwaysSucceedDecorator  = require(game.ReplicatedStorage.BehaviourTree.node_types.always_succeed_decorator)
 
 BehaviourTree.register = Registry.register
 BehaviourTree.getNode = Registry.getNode

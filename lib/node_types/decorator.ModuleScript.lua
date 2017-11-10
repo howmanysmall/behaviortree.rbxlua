@@ -1,6 +1,6 @@
-local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
-local Registry      = require(game.ReplicatedStorage.Library.BehaviourTree.registry)
-local Node          = require(game.ReplicatedStorage.Library.BehaviourTree.node_types.node)
+local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
+local Registry      = require(game.ReplicatedStorage.BehaviourTree.registry)
+local Node          = require(game.ReplicatedStorage.BehaviourTree.node_types.node)
 local Decorator = class('Decorator', Node)
 
 function Decorator:initialize(config)

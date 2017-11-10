@@ -1,5 +1,5 @@
-local class         = require(game.ReplicatedStorage.Library.BehaviourTree.middleclass)
-local BranchNode  	= require(game.ReplicatedStorage.Library.BehaviourTree.node_types.branch_node)
+local class         = require(game.ReplicatedStorage.BehaviourTree.middleclass)
+local BranchNode  	= require(game.ReplicatedStorage.BehaviourTree.node_types.branch_node)
 local Sequence = class('Sequence', BranchNode)
 
 function Sequence:success()
