@@ -1,17 +1,11 @@
 # BehaviourTree.lua 
-[![Build history](https://secure.travis-ci.org/tanema/behaviourtree.lua.svg)](http://travis-ci.org/#!/tanema/behaviourtree.lua)
-[![Coverage Status](https://coveralls.io/repos/github/tanema/behaviourtree.lua/badge.svg?branch=master)](https://coveralls.io/github/tanema/behaviourtree.lua?branch=master)
-
-A Lua implementation of Behavior Trees ported from javascript [here](http://github.com/Calamari/BehaviorTree.js). They are useful for implementing AIs. If you need more information about Behavior Trees, look on [GameDevAI](http://aigamedev.com), there is a nice [video about Behavior Trees from Alex Champandard](http://aigamedev.com/open/article/behavior-trees-part1/). There is also a nice read of [Björn Knafla](http://www.altdevblogaday.com/author/bjoern-knafla/) explaining how [explaining how Behavior Trees work](http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/).
+A RbxLua implementation of Behavior Trees ported from a [lua implementation](https://github.com/tanema/behaviourtree.lua) ported from javascript [here](http://github.com/Calamari/BehaviorTree.js). They are useful for implementing AIs. If you need more information about Behavior Trees, look on [GameDevAI](http://aigamedev.com), there is a nice [video about Behavior Trees from Alex Champandard](http://aigamedev.com/open/article/behavior-trees-part1/). There is also a nice read of [Björn Knafla](http://www.altdevblogaday.com/author/bjoern-knafla/) explaining how [explaining how Behavior Trees work](http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/).
 
 ## Installation
 
-Just copy the lib folder into your project folder, rename it (example: 'behaviourtree') 
+Just copy the Library folder into ReplicatedStorage (you are free to change the location, just make sure to update the paths in all of the modules) 
 
-####For Plain Lua
-`BehaviourTree = require('behaviourtree/behaviour_tree')`
-####For Love 2D
-`BehaviourTree = require('behaviourtree') --uses init.lua file`
+`BehaviourTree = require(game.ReplicatedStorage.Library.BehaviourTree.behaviour_tree)`
 
 ## How to use
 
