@@ -211,6 +211,13 @@ local decoratedSequence = BehaviorTree.InvertDecorator:new({
 
 *Those three decorators are useful, but the most useful decorators are those you build for your project, that do stuff with your objects. Just [check out the code](https://github.com/oniich-n/behaviortree.rbxlua/blob/master/lib/node_types/invert_decorator.ModuleScript.lua), to see how simple it is, to create your decorator.*
 
+### Something not working right?
+
+When setting up a behavior tree, people have come across a couple of problems because of a few concepts that they don't seem to fully grasp when running through a tree.
+
+- Attempting to succeed a node when it starts
+A common problem I've seen is where people to call the `success` of a node without calling the `running` method somewhere before, usually when they are running a function at the start and then immediately completing this. The problem with this is that a node must be in either one of two states `running` or `success`. If there is no proper definition of `task:running()` somewhere within the `run` function of the task, the node will error out.
+
 ## Contributing
 
 If you want to contribute? If you have some ideas or critics, just open an issue, here on github. If you want to get your hands dirty, you can fork this repo. But note: If you write code, don't forget to write tests. And then make a pull request. I'll be happy to see what's coming.
