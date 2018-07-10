@@ -215,8 +215,36 @@ local decoratedSequence = BehaviorTree.InvertDecorator:new({
 
 When setting up a behavior tree, people have come across a couple of problems because of a few concepts that they don't seem to fully grasp when running through a tree.
 
-- Attempting to succeed a node when it starts
-A common problem I've seen is where people to call the `success` of a node without calling the `running` method somewhere before, usually when they are running a function at the start and then immediately completing this. The problem with this is that a node must be in either one of two states `running` or `success`. If there is no proper definition of `task:running()` somewhere within the `run` function of the task, the node will error out.
+- **Attempting to succeed a node when it starts.** A common problem I've seen is where people to call the `success` of a node without calling the `running` method somewhere before, usually when they are running a function at the start and then immediately completing this. The problem with this is that a node must be in either one of two states `running` or `success`. If there is no proper definition of `task:running()` somewhere within the `run` function of the task, the node will error out.
+
+- **Running the same tree on different occasions.** Say you have a bunch of different mobs, but they all share the same behavior. You've now written a ModuleScript that returns the a tree, but you've found that only one mob is updating at a time. What's happening? Well, you've only created one tree "instance", but each "instance" can only describe the actions of a single mob. In order to fix this, you'll need to create a new tree for every mob that needs it, effectively creating a *forest*.
+
+**Do** this:
+``` lua
+return function()
+    local Tree = BehaviorTree:new({
+        tree = BehaviorTree.Task:new({
+            run = function(task, object)
+                print("hello!")
+            end
+        })
+    })
+end
+```
+
+instead of...
+
+``` lua
+local Tree = BehaviorTree:new({
+    tree = BehaviorTree.Task:new({
+        run = function(task, object)
+            print("hello!")
+        end
+    })
+})
+
+return Tree
+```
 
 ## Contributing
 
