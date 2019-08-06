@@ -4,7 +4,8 @@ local Random = class('Random', BranchNode)
 
 function Random:start(object)
   BranchNode.start(self, object)
-  self.actualTask = math.floor(math.random() * #self.nodes+1)
+  local Value = math.random() * #self.nodes + 1
+  self.actualTask = Value - Value % 1
 end
 
 function Random:success()
